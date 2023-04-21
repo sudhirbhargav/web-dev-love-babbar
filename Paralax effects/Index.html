@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paralax effect</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kanit:wght@700&family=Nabla&display=swap" rel="stylesheet">
+    <style>
+   
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+#wrapper{
+    height:100vh;
+    overflow-x:hidden;
+    overflow-y:auto;
+    perspective:10px;
+}
+
+.container{
+    position:relative;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.background{
+    transform:translateZ(-40px) scale(5);
+}
+
+.foreground{
+    transform:translateZ(-20px) scale(3);
+}
+
+.background, .foreground{
+    object-fit: cover;
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+}
+h1{
+    font-size: 200px;
+    position: absolute;
+    top: 5rem;
+    color: white;
+    text-shadow: -1px 3px 4px rgba(0, 0, 0, 0.5);
+}
+section{
+    font-size: 20px;
+    background-color: #202022;
+    color: white;
+}
+.bg1{
+    background-image: url(sport-1.jpg);
+}
+.bg2{
+    background-image: url(sport-2.jpg);
+}
+.bg3{
+    background-image: url(sport-3.jpg);
+}
+.bg{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+}
+.text{
+    font-size: 20px;
+    padding: 5.5rem 3.5rem;
+}
+h2{
+    font-size: 50px;
+}
+.desc{   
+
+    align-self: center;
+    background-color: white;
+    color: black;
+    padding: 0.5rem;
+    width: fit-content;
+    font-size: 30px;
+    border-radius: 10px;
+
+}
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <img src="background.png" class="background" alt="">
+            <img src="foreground.png" class="foreground" alt="">
+            <h1>ADVENTURE</h1>
+        </div>
+
+        <section>
+            <div class="textdiv">
+                <p class="text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut earum dolores nihil officia quidem consequuntur vel fugit iure voluptate cum amet voluptates placeat harum commodi neque officiis reiciendis, optio ab.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut earum dolores nihil officia quidem consequuntur vel fugit iure voluptate cum amet voluptates placeat harum commodi neque officiis reiciendis, optio ab.
+                    <br>
+                    <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eos velit, modi similique in repudiandae ab adipisci perspiciatis veniam, eaque doloribus rerum molestiae cupiditate natus veritatis nostrum? Obcaecati, consequuntur nobis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eos velit, modi similique in repudiandae ab adipisci perspiciatis veniam, eaque doloribus rerum molestiae cupiditate natus veritatis nostrum? Obcaecati, consequuntur nobis.
+                </p>
+            </div>
+
+            <div class="bg bg1">
+                <h2 class="desc">Biking</h2>
+            </div>
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut earum dolores nihil officia quidem consequuntur vel fugit iure voluptate cum amet voluptates placeat harum commodi neque officiis reiciendis, optio ab.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut earum dolores nihil officia quidem consequuntur vel fugit iure voluptate cum amet voluptates placeat harum commodi neque officiis reiciendis, optio ab.
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eos velit, modi similique in repudiandae ab adipisci perspiciatis veniam, eaque doloribus rerum molestiae cupiditate natus veritatis nostrum? Obcaecati, consequuntur nobis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eos velit, modi similique in repudiandae ab adipisci perspiciatis veniam, eaque doloribus rerum molestiae cupiditate natus veritatis nostrum? Obcaecati, consequuntur nobis.
+            </p>
+
+            <div class="bg bg2">
+                <h2 class="desc">Para glading</h2>
+            </div>
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut earum dolores nihil officia quidem consequuntur vel fugit iure voluptate cum amet voluptates placeat harum commodi neque officiis reiciendis, optio ab.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut earum dolores nihil officia quidem consequuntur vel fugit iure voluptate cum amet voluptates placeat harum commodi neque officiis reiciendis, optio ab.
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eos velit, modi similique in repudiandae ab adipisci perspiciatis veniam, eaque doloribus rerum molestiae cupiditate natus veritatis nostrum? Obcaecati, consequuntur nobis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eos velit, modi similique in repudiandae ab adipisci perspiciatis veniam, eaque doloribus rerum molestiae cupiditate natus veritatis nostrum? Obcaecati, consequuntur nobis.
+            </p>
+
+            <div class="bg bg3">
+                <h2 class="desc">Surfing</h2>
+            </div>
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut earum dolores nihil officia quidem consequuntur vel fugit iure voluptate cum amet voluptates placeat harum commodi neque officiis reiciendis, optio ab.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut earum dolores nihil officia quidem consequuntur vel fugit iure voluptate cum amet voluptates placeat harum commodi neque officiis reiciendis, optio ab.
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eos velit, modi similique in repudiandae ab adipisci perspiciatis veniam, eaque doloribus rerum molestiae cupiditate natus veritatis nostrum? Obcaecati, consequuntur nobis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eos velit, modi similique in repudiandae ab adipisci perspiciatis veniam, eaque doloribus rerum molestiae cupiditate natus veritatis nostrum? Obcaecati, consequuntur nobis.
+            </p>
+
+
+
+        </section>
+    </div>
+</body>
+</html>
