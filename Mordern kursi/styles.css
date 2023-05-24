@@ -382,6 +382,21 @@ h5 {
   box-shadow: 0 12px 35px 0 rgba(16, 39, 112, 0.25);
   background-color: #333;
 }
+.for-color-2:checked ~ .info-wrap .btn:before {
+  background-color: #1a1a1a;
+}
+.for-color-3:checked ~ .info-wrap .btn:before {
+  background-color: #40566e;
+}
+.for-color-4:checked ~ .info-wrap .btn:before {
+  background-color: #5e89b2;
+}
+.for-color-5:checked ~ .info-wrap .btn:before {
+  background-color: #8c7f76;
+}
+.for-color-6:checked ~ .info-wrap .btn:before {
+  background-color: #5d6160;
+}
 
 
 @media screen and (max-width: 991px) {
